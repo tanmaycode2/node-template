@@ -11,6 +11,6 @@ app.use((req, res, next) => {
 });
 
 // start express server on port 8080
-app.listen(8080, () => {
-  console.log("server started on port 8080");
+app.listen(process.env.port || 8000, () => {
+  console.log("server started on port, process.env.port || 8000");
 });
